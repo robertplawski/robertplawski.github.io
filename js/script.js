@@ -1,5 +1,5 @@
 const CONFIG = {
-  "user": "0x45R",
+  "user": "0x45r",
   "show_empty": false
 }
 const TOKEN = '' // INSERT YOUR TOKEN HERE
@@ -69,7 +69,9 @@ fetch(`https://api.github.com/users/${CONFIG.user}/repos`, {
     if(!CONFIG.show_empty && !homepage){
       return;
     }
-
+    if(name == `${CONFIG.user}.github.io`){
+      return;
+    }
     const repoContainer = document.createElement('section');
     repoContainer.classList.add('repo');
     repoContainer.id = name;
