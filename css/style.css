@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height:100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Inter, sans-serif;
+  padding:1rem;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  padding-bottom:0.5rem;
+  flex-wrap:wrap;
+  gap:0.25rem;
+}
+nav ul{
+  all:unset;
+  list-style-type: none;
+  display:flex;
+  gap:1rem;
+}
+a{
+  color:inherit;
+}
+.header__brand-title{
+  font-weight:bold;
+  font-size:1.25rem;
+}
+main{
+  padding:0.5rem 0;
+  flex:1;
+  display: flex;
+  gap:0.5rem;
+  flex-direction:column;
+  align-items:center;
+  }
+section{
+  border-radius:0.25rem;
+  max-width:40rem;
+  width:100%;
+  flex:1;
+}
+section.user{
+  padding:0.5rem;
+  border: 1px solid lightgray;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  gap:2rem;
+  flex-wrap:wrap;
+  flex:0;
+}
+.repos-container__title{
+  font-weight:600;
+  font-size:1.15rem;
+}
+footer{
+  text-align:center;
+  padding-top:0.5rem;
+}
+hr{
+  all:unset;
+  border-top:1px solid lightgray;
+  width:100%;
+  display:block;
+  margin: 0.5rem 0;
+}
+.user__info{
+  width:10rem;
+  max-width:10rem;
+}
+.user__profile-picture{
+  border-radius:50%;
+  background-color: gray;
+  max-height:5rem;
+  aspect-ratio:1/1;
+}
+.user__info__name{
+  font-weight:600;
+  font-size:1.15rem
+}
+.user__info__login{
+  color:gray;
+}
+
+.repos-container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  flex:0;
+}
+section.repo{
+  padding:1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:0.25rem;
+  border: 1px solid lightgray;
+}
+.repo__title{
+  font-weight:600;
+  font-size:1.15rem;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+}
+.repo__iframe{
+
+  border:0px;
+  border-radius:0.25rem;
+  width:100%;
+  aspect-ratio:16/9;
+}
+.repo__fullscreen-button{
+  border:0px;
+  background:none;
+  cursor:pointer;
+  font-size:1.5rem;
+}
+.repo__iframe.fullscreen{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:white;
+  border-radius:0;
+}
+button.fullscreen{
+  position:absolute;
+  top:1rem;
+  right:1rem;
+  z-index:10;
+}
+body.overflow-hidden{
+  overflow:hidden;
+}
+.repo__categories{
+  color:black;
+}
+.repo__language-icon{
+  font-size:1.5rem;
+  min-width:1.5rem;
+  width:1.5rem;
+  color:black;
+  border-radius:0.25rem;
+  overflow:clip;
+  height:1.5rem;
+}
+.repo__footer{
+  display:flex;
+  align-self:flex-start;
+  gap:0.5rem;
+}
+.repo__footer__link{
+  text-decoration:none;
+}
