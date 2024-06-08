@@ -58,7 +58,6 @@ section.user{
   justify-content:center;
   align-items:center;
   gap:2rem;
-  flex-wrap:wrap;
   flex:0;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
 }
