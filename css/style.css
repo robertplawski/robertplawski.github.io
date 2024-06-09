@@ -45,7 +45,7 @@ main{
   justify-content:center;
   }
 section{
-  border-radius:0.25rem;
+  border-radius:0.5rem;
   max-width:53rem;
   width:100%;
   flex:1;
@@ -59,7 +59,7 @@ section.user{
   justify-content:center;
   align-items:center;
   gap:2rem;
-  flex:0;
+  flex:1;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
 }
 .repos-container__title{
