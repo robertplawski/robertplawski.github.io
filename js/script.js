@@ -4,6 +4,11 @@ const CONFIG = {
 }
 const TOKEN = '' // INSERT YOUR TOKEN HERE
 
+const setHyperLink(id, value) => {
+  document.querySelectorAll(id)
+    .forEach((hyperlink)=>hyperlink.href = value);
+}
+
 const setLabels = (id, value) => {
   document.querySelectorAll(id)
     .forEach((label)=>label.innerText = value);
@@ -46,9 +51,9 @@ fetch(`https://api.github.com/users/${CONFIG.user}`, {
 .then((data)=>{
   const {login, name, bio, html_url, avatar_url} = data;
   console.log(data);
-
   setLabels('.js-login',login);
   setLabels('.js-name', name);
+  setHyperlink('.js-github-hyperlink', html_url)
   setLabels('.js-bio', bio);
   setLabels('.js-url', html_url);
   setImages('.js-profile-picture', avatar_url);
