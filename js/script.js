@@ -1,5 +1,5 @@
 const CONFIG = {
-  "user": "0x45r",
+  "user": "robertplawski",
   "show_empty": false
 }
 const TOKEN = '' // INSERT YOUR TOKEN HERE
