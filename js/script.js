@@ -4,7 +4,7 @@ const CONFIG = {
 }
 const TOKEN = '' // INSERT YOUR TOKEN HERE
 
-const setHyperLink = (id, value) => {
+const setHyperlink = (id, value) => {
   document.querySelectorAll(id)
     .forEach((hyperlink)=>hyperlink.href = value);
 }
